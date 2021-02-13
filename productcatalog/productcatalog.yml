@@ -1,0 +1,42 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: productcatalog
+  labels:
+    app: productcatalog
+spec:
+  type: NodePort
+  selector:
+    app: productcatalog
+  ports:
+  - protocol: TCP
+    port: 8020
+    name: http
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: productcatalog
+spec:
+  selector:
+    matchLabels:
+      app: productcatalog
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: productcatalog
+    spec:
+      containers:
+      - name: productcatalog
+        image: atbclkubernetes/java-productcatalog:latest
+        ports:
+        - containerPort: 8020
+        livenessProbe:
+          httpGet:
+            path: /healthcheck
+            port: 8025
+          initialDelaySeconds: 30
+          timeoutSeconds: 1

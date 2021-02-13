@@ -1,0 +1,11 @@
+com\cl\shopfront\repo\StockRepo.class
+com\cl\shopfront\services\ProductService.class
+com\cl\shopfront\model\Product.class
+com\cl\shopfront\repo\ProductRepo$1.class
+com\cl\shopfront\repo\StockRepo$1.class
+com\cl\shopfront\services\dto\ProductDTO.class
+com\cl\shopfront\ShopfrontApplication.class
+com\cl\shopfront\controllers\HomeController.class
+com\cl\shopfront\resources\ProductResource.class
+com\cl\shopfront\services\dto\StockDTO.class
+com\cl\shopfront\repo\ProductRepo.class

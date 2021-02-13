@@ -1,0 +1,7 @@
+com\cl\stockmanager\config\DataGenerator.class
+com\cl\stockmanager\model\Stock.class
+com\cl\stockmanager\services\StockService.class
+com\cl\stockmanager\exceptions\StockNotFoundException.class
+com\cl\stockmanager\repositories\StockRepository.class
+com\cl\stockmanager\StockManagerApplication.class
+com\cl\stockmanager\resources\StockResource.class

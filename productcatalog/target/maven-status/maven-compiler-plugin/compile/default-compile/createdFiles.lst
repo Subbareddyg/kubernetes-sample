@@ -1,0 +1,6 @@
+com\cl\productcatalogue\healthchecks\BasicHealthCheck.class
+com\cl\productcatalogue\ProductServiceApplication.class
+com\cl\productcatalogue\configuration\ProductServiceConfiguration.class
+com\cl\productcatalogue\services\ProductService.class
+com\cl\productcatalogue\model\Product.class
+com\cl\productcatalogue\resources\ProductResource.class
